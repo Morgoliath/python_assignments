@@ -1,0 +1,15 @@
+def isPrime(number):
+    
+    prime = True
+    for i in range(2, number):
+        if number % i == 0:
+            prime = False
+            break
+    return prime
+    
+ def print_all_primes(stop_limit):
+    prime_numbers = []
+    for i in range(2, stop_limit):
+        if isPrime(i):
+            prime_numbers.append(i)
+    return prime_numbers
